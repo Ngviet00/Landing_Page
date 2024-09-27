@@ -1,0 +1,121 @@
+.container {
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+#content {
+    margin-top: 5em !important;
+}
+
+#content .hero {
+    display: flex;
+}
+
+#content .hero .image {
+    flex-basis: 50%;
+}
+
+#content .hero .image img {
+    max-width: 100%;
+    border-radius: 2px;
+}
+
+#content .hero .introduce {
+    flex-basis: 50%;
+    padding-left: 80px;
+}
+
+#content .hero .introduce h3 {
+    font-size: 28px;
+    line-height: 33.6px;
+    font-weight: 400;
+    color: #333333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#content .hero .introduce span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.about-modern h3 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.about-modern span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.core-business div span.text-core-business {
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    top: 3em;
+    left: 43%;
+}
+
+.core-business div span.text-vision-smarter {
+    position: absolute;
+    color: white;
+    top: 19em;
+    left: 20em;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.core-business div span.text-high-performance {
+    position: absolute;
+    color: white;
+    top: 19em;
+    left: 39em;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.core-business div span.text-pc-vision {
+    position: absolute;
+    color: white;
+    top: 19em;
+    left: 69.8em;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.our-offerings ul {
+    padding-left: 25px;
+}
+
+.our-offerings ul li{
+    color: #666666;
+    font-size: 13px;
+}
+
+tbody tr {
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+}
+
+tbody tr td:first-child, tbody tr td:last-child {
+    font-weight: bold;
+}
+
+.career-opportunities button {
+    font-size: 12px;
+}

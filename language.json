@@ -1,0 +1,10 @@
+{
+    "en": {
+        "title": "Welcome",
+        "description": "This is an example of a multilingual site."
+    },
+    "vi": {
+        "title": "Chào mừng",
+        "description": "Đây là một ví dụ về trang web đa ngôn ngữ."
+    }
+}
