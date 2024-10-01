@@ -1,12 +1,13 @@
 <footer>
     <div class="container">
-        <div class="d-flex align-item-center mb-4" style="padding-top: 10px;">
+
+        <div class="d-flex align-item-center mb-4 header-contact" style="padding-top: 10px;">
             <h2 class="text-modern-system">Modern System</h2>
             <button class="btn btn-primary btn-contact">Contact Us</button>
         </div>
 
-        <div class="d-flex justify-content-between">
-            <div class="about-us" style="flex-basis: 20%;">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 about-us item-info" style="width: 23%;">
                 <h4>About Us</h4>
                 <ul>
                     <li>
@@ -27,8 +28,8 @@
                 </ul>
             </div>
 
-            <div class="core-business" style="flex-basis: 23%;">
-                <h4 style="font-size: 16px;">About Us</h4>
+            <div class="col-lg-3 col-md-6 col-12 core-business item-info">
+                <h4 style="font-size: 16px;">Core Business</h4>
                 <ul>
                     <li>
                         <a href="#link-vision-smart">Vision Smarter</a>
@@ -42,7 +43,7 @@
                 </ul>
             </div>
 
-            <div class="office-address" style="flex-basis: 25%;">
+            <div class="col-lg-3 col-md-6 col-12 office-address item-info">
                 <div class="first-line position-relative">
                     <a target="_blank" class="text-white" href="https://www.google.com/maps/place/Modern+System/@21.1663649,106.0488743,1022m/data=!3m2!1e3!4b1!4m6!3m5!1s0x31350974e7312699:0x613b3d8899c38e5a!8m2!3d21.16636!4d106.0537452!16s%2Fg%2F11pwv6lkpj?hl=vi-VN&entry=ttu&g_ep=EgoyMDI0MDkyNC4wIKXMDSoASAFQAw%3D%3D" style="color: white;text-decoration: none;">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -70,7 +71,7 @@
                 </div>
             </div>
 
-            <div class="factory-address">
+            <div class="col-lg-3 col-md-6 col-12 factory-address item-info">
                 <div class="first-line position-relative">
                     <a target="_blank" class="text-white" style="text-decoration: none;" href="https://www.google.com/maps?q=21.125661251771042,106.07846493322114&z=14&t=m&mapclient=embed">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -97,10 +98,12 @@
                     </span>
                 </div>
             </div>
-        </div>
-
-        <div class="copy-right d-flex justify-content-center mt-2">
-            <span>© 2024 Modern System Viet Nam Co., Ltd. All Rights Reserved.</span>
-        </div>
+      </div>
+      <div class="copy-right d-flex justify-content-center mt-2">
+        <span>©<span id="currrent-year"></span> Modern System Viet Nam Co., Ltd. All Rights Reserved.</span>
     </div>
 </footer>
+
+<script>
+    document.getElementById("currrent-year").innerHTML = new Date().getFullYear();
+</script>

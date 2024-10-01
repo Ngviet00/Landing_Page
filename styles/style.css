@@ -1,14 +1,23 @@
+html {
+    padding: 5px;
+}
+
+body img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
 .container {
     max-width: 1300px;
     margin: 0px auto;
 }
 
 .nav-link:hover {
-    text-decoration: underline;
+    border-bottom: 3px solid #E4491D;
 }
 
 #content {
-    margin-top: 5em !important;
+    margin-top: 1em !important;
 }
 
 #content .hero {
@@ -56,14 +65,53 @@
     font-weight: 400;
 }
 
+.core-business #link-vision-smart {
+    position: absolute;
+    top: 63%;
+    display: inline-block;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.core-business #link-high-performance {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.core-business #link-pc-vision {
+    position: absolute;
+    top: 63%;
+    left: 75.5%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
 .core-business div span.text-core-business {
     position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
     color: white;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
-    top: 3em;
-    left: 43%;
+    padding: 10px; 
+    text-align: center; 
+    font-size: 45px;
 }
 
 .core-business div span.text-vision-smarter {
@@ -118,4 +166,123 @@ tbody tr td:first-child, tbody tr td:last-child {
 
 .career-opportunities button {
     font-size: 12px;
+}
+
+.owl-item {
+    width: 315px !important;
+    margin-right: 6px;
+}
+
+.owl-item.active {
+    margin-right: 6px;
+}
+
+.owl-carousel .item {
+    width: 100%;
+    display: inline-block;
+}
+
+.owl-stage-outer, .owl-stage {
+    height: 440px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #content .hero .introduce {
+        padding-top: 0em !important;
+    }
+
+    #content .hero .row {
+        align-items: center;
+    }
+
+    .core-business #link-vision-smart {
+        font-size: 18px !important;
+    }
+
+    .core-business #link-high-performance {
+        font-size: 18px !important;
+    }
+
+    .core-business #link-pc-vision {
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #content {
+        padding-top: 4em;
+    }
+
+    #content .hero .introduce {
+        flex-basis: 98%;
+        padding-top: 15px !important;
+        padding-left: 10px;
+    }
+
+    #content .hero .introduce h3 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    #link-core-business .main-core-business {
+        display: none !important;
+    }
+
+    .img1-mobile, .img2-mobile, .img3-mobile {
+        display: block !important;
+        margin: 0px auto;
+    }
+
+    .img1-mobile a{
+        position: absolute;
+        top: 70%;
+        display: inline-block;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .img2-mobile a{
+        position: absolute;
+        top: 70%;
+        display: inline-block;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .img3-mobile a{
+        position: absolute;
+        top: 72%;
+        display: inline-block;
+        left: 50.5%;
+        transform: translate(-50%, -50%);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .img1-mobile a, .img2-mobile a, .img3-mobile a {
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 475px) {
+    tbody td {
+        font-size: 11px;
+    }
 }

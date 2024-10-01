@@ -68,6 +68,10 @@ footer .core-business ul li a {
     text-decoration: none;
 }
 
+footer .office-address .first-line a:hover span {
+    text-decoration: underline;
+}
+
 footer .office-address .first-line .fa-map-marker{
     position: absolute;
     top: 14px;
@@ -122,6 +126,10 @@ footer .office-address .third-line span {
 footer .factory-address {
     flex-basis: 27%;
     padding-left: 15px;
+}
+
+footer .factory-address .first-line a:hover span {
+    text-decoration: underline;
 }
 
 footer .factory-address .first-line .fa-map-marker {
@@ -184,4 +192,72 @@ footer .copy-right ul li {
 footer .copy-right ul li a {
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 992px) {
+    footer {
+        padding-left: 30px;
+    }
+
+    footer .header-contact {
+        justify-content: center;
+    }
+
+    footer .container .item-info {
+        flex-basis: 49%;
+    }
+
+    footer .about-us, footer .core-business {
+        margin-bottom: 1em;
+    }
+
+    footer .fa-map-marker, footer .fa-phone, footer .fa-users, footer .fa-envelope {
+        font-size: 25px !important;
+    }
+}
+
+
+@media only screen and (max-width: 504px) {
+    footer .text-modern-system {
+        font-size: 30px;
+    } 
+
+    footer .btn-contact{
+        margin-left: 1.5em;
+    }
+
+    footer .office-address, footer .factory-address {
+        flex-basis: 98%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    footer .office-address, footer .factory-address {
+        flex-basis: 98% !important;
+    }
+
+    footer .factory-address .first-line span {
+        height: 0px;
+    }
+
+    footer .factory-address.item-info {
+        margin-top: 30px;
+        border-top: 1px solid #7f7a7a;
+        padding-top: 10px;
+    }
+
+    footer .btn-contact {
+        font-size: 12px;
+    }
+    
+}
+
+@media only screen and (max-width: 475px) {
+    footer .container .item-info {
+        font-size: 13px;
+    }
+
+    footer .copy-right span {
+        font-size: 12px;
+    }
 }

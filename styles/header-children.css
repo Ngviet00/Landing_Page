@@ -1,0 +1,41 @@
+#header-children {
+    border-bottom: 1px solid #d7d7d7;
+}
+.class-header-children {
+    margin-top: 6em;
+}
+
+.class-header-children ul {
+    height: 30px;
+    align-items: flex-end;
+    padding-left: 0;
+}
+
+.class-header-children ul li {
+    list-style: none;
+    padding: 0px 15px;
+    display: inline-block;
+    height: 100%;
+}
+
+.class-header-children ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    display: inline-block;
+    height: 100%;
+}
+
+.class-header-children ul li a:hover {
+    border-bottom: 3px solid #E4491D;
+}
+
+.class-header-children ul li a.active-header-children {
+    border-bottom: 3px solid #E4491D;
+}
+
+@media only screen and (max-width: 992px) {
+    #header-children {
+        display: none;
+    }
+}

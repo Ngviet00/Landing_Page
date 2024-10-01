@@ -1,11 +1,15 @@
 header {
-    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     border-bottom: 1px solid #d7d7d7;
     background: white;
     z-index: 999;
+    height: 58px;
+}
+
+header a.active-header {
+    border-bottom: 3px solid #E4491D;
 }
 
 header a.nav-link {
@@ -25,4 +29,21 @@ header button {
     outline: none !important;
     border: none !important;
     padding: 0 !important;
+}
+
+@media only screen and (max-width: 992px) {
+    header .container a.nav-link {
+        display: none;
+    }
+
+    header .dropdown {
+        display: none;
+    }
+
+    header .fa-bars {
+        font-size: 25px;
+        display: block !important;
+        padding-right: 6px;
+        padding-top: 5px;
+    }
 }

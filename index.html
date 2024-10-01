@@ -6,32 +6,40 @@
     <title>Modern System VN</title>
     <link rel="stylesheet" href="/styles/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="/styles/header.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/styles/header-children.css" asp-append-version="true" />
     <link rel="stylesheet" href="/styles/footer.css" asp-append-version="true" />
     <link rel="stylesheet" href="/styles/lib/bootstrap.min.css">
     <link rel="stylesheet" href="/Font-Awesome-4.7.0/css/font-awesome.min.css" asp-append-version="true" />
     <link rel="icon" href="/Image/icon.PNG" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/js/lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/js/lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
 </head>
 <body class="position-relative">
     <div id="header"></div>
+    <div id="header-children"></div>
 
-    <div id="content" class="mt-4">
+    <div id="content">
         <div class="hero container">
-            <div class="image">
-                <img src="/Image/hero.jpeg" alt="">
-            </div>
-            <div class="introduce">
-                <div class="my-4">
-                    <h3 class="mb-4">Our Vision</h3>
-                    <span>
-                        To be a leading provider of innovative vision technology solutions, empowering businesses and industries with advanced inspection and automation capabilities.
-                    </span>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 img">
+                    <img src="/Image/hero.jpeg" alt="">
                 </div>
+                <div class="col-lg-6 col-md-12 col-12 introduce pt-5">
+                    <div class="mb-4">
+                        <h3 class="mb-2">Our Vision</h3>
+                        <span>
+                            To be a leading provider of innovative vision technology solutions, empowering businesses and industries with advanced inspection and automation capabilities.
+                        </span>
+                    </div>
 
-                <div>
-                    <h3 class="mb-4">Our Mission</h3>
-                    <span>
-                        To develop and deliver cutting-edge vision technology solutions that enhance productivity, quality, and efficiency across various industries, through our expertise in alignment, surface inspection, special vision inspection, deep learning application development, and smart factory solutions.
-                    </span>
+                    <div>
+                        <h3 class="mb-2">Our Mission</h3>
+                        <span>
+                            To develop and deliver cutting-edge vision technology solutions that enhance productivity, quality, and efficiency across various industries, through our expertise in alignment, surface inspection, special vision inspection, deep learning application development, and smart factory solutions.
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,22 +53,41 @@
             </span>
         </div>
 
-        <div class="core-business mt-5" id="link-core-business">
-            <div class="position-relative">
+        <div class="core-business mt-5 text-center" id="link-core-business">
+            <div class="position-relative d-inline-block main-core-business">
+                <img src="/Image/1920x640_Core-Business_Banner.jpg" alt="" style="width: 100%;height: auto;">
                 <span class="text-core-business">
                     Core Businesses
                 </span>
-                <img src="/Image/1920x640_Core-Business_Banner.jpg" alt="" style="max-width: 100%;">
                 <a href="javascript:void(0);" id="link-vision-smart">
-                    <span class="text-vision-smarter">
-                        Vision Smarter
-                    </span>
+                    Vision Smarter
                 </a>
                 <a href="javascript:void(0);" id="link-high-performance">
-                    <span class="text-high-performance">High Performance Alignment Vision</span>
+                    High Performance Alignment Vision
                 </a>
                 <a href="javascript:void(0);" id="link-pc-vision">
-                    <span class="text-pc-vision">PC Vision</span>
+                    PC Vision
+                </a>
+            </div>
+
+            <div class="img1-mobile position-relative" style="display: none;">
+                <img src="/Image/h1.jpg" alt="">
+                <a href="javascript:void(0);" id="mobile-link-vision-smart">
+                    Vision Smarter
+                </a>
+            </div>
+            
+            <div class="img2-mobile position-relative" style="display: none;">
+                <img src="/Image/h2.jpg" alt="">
+                <a href="javascript:void(0);" id="mobile-link-high-performance" class="position-absolute">
+                    High Performance Alignment Vision
+                </a>
+            </div>
+            
+            <div class="img3-mobile position-relative" style="display: none;">
+                <img src="/Image/h3.jpg" alt="" width="386px">
+                <a href="javascript:void(0);" id="mobile-link-pc-vision" class="position-absolute">
+                    PC Vision
                 </a>
             </div>
         </div>
@@ -68,10 +95,10 @@
         <div class="our-offerings mt-5" id="link-our-offering">
             <div class="container">
                 <h2 class="text-center mb-4">Our Offerings</h2>
-                <div class="row row-cols-1 row-cols-md-5 g-4">
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="/Image/csm_Image1_90f110707b.jpg" class="card-img-top" alt="...">
+                <div class=" owl-carousel">
+                    <div class="mb-3" style="width: 100%;">
+                        <div class="card h-100" style="min-height: 425px;">
+                            <img src="/Image/csm_Image1_90f110707b.jpg" class="card-img-top" alt="..." style="height: 207px !important;">
                             <div class="card-body" style="padding: 8px;">
                                 <h5 class="card-title mb-3 mt-1" style="font-size: 16px;">Alignment</h5>
                                 <ul>
@@ -86,65 +113,62 @@
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="/Image/csm_Image1_90f110707b.jpg" class="card-img-top" alt="...">
+                    <div class="mb-3" style="width: 100%;">
+                        <div class="card h-100" style="min-height: 425px;">
+                            <img src="/Image/material-pocessing-surface-inspection-500x300.jpg" class="card-img-top" alt="..." style="height: 207px !important;">
                             <div class="card-body" style="padding: 8px;">
-                                <h5 class="card-title mb-3 mt-1" style="font-size: 16px;">Alignment</h5>
+                                <h5 class="card-title mb-3 mt-1" style="font-size: 16px;">Surface Inspection</h5>
                                 <ul>
                                     <li class="mb-2">
-                                        Development of alignment programs for various attachment and assembly processes.
+                                        Development of a foreign and crack inspection program on the surface and side of the product.
                                     </li>
                                     <li>
-                                        Gain unique technology to use Cognex's Align+ templates.
+                                        Development of Surface Foreign Object Detection Algorithm by Image Processing and Optical Technology.
+                                    </li>
+                                    <li>Glass Crack Detection</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3" style="width: 100%">
+                        <div class="card h-100" style="min-height: 425px;">
+                            <img src="/Image/img3.PNG" class="card-img-top" alt="..." style="height: 207px !important;">
+                            <div class="card-body" style="padding: 8px;">
+                                <h5 class="card-title mb-3 mt-1" style="font-size: 16px;">Special Vision Inspection</h5>
+                                <ul>
+                                    <li class="mb-2">
+                                        FPD Layer Inspector.
+                                    </li>
+                                    <li>
+                                        Optics for bending inspection such as Curl and Warpage.
+                                    </li>
+                                    <li>
+                                        Thermography with vibration and heat.
+                                    </li>
+                                    <li>
+                                        Nondestructive examiner combined with NDT and ultrasound.
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="/Image/csm_Image1_90f110707b.jpg" class="card-img-top" alt="...">
+                    <div class="mb-3" style="width: 100%">
+                        <div class="card h-100" style="min-height: 425px;">
+                            <img src="/Image/img4.PNG" class="card-img-top" alt="..." style="height: 207px !important;">
                             <div class="card-body" style="padding: 8px;">
-                                <h5 class="card-title mb-3 mt-1" style="font-size: 16px;">Alignment</h5>
+                                <h5 class="card-title mb-3 mt-1" style="font-size: 16px;margin-right: 5px;">Alignment</h5>
                                 <ul>
                                     <li class="mb-2">
-                                        Development of alignment programs for various attachment and assembly processes.
+                                        ICT Application Technology
                                     </li>
                                     <li>
-                                        Gain unique technology to use Cognex's Align+ templates.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="/Image/csm_Image1_90f110707b.jpg" class="card-img-top" alt="...">
-                            <div class="card-body" style="padding: 8px;">
-                                <h5 class="card-title mb-3 mt-1" style="font-size: 16px;">Alignment</h5>
-                                <ul>
-                                    <li class="mb-2">
-                                        Development of alignment programs for various attachment and assembly processes.
+                                        IOT Application Technology
                                     </li>
                                     <li>
-                                        Gain unique technology to use Cognex's Align+ templates.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="/Image/csm_Image1_90f110707b.jpg" class="card-img-top" alt="...">
-                            <div class="card-body" style="padding: 8px;">
-                                <h5 class="card-title mb-3 mt-1" style="font-size: 16px;">Alignment</h5>
-                                <ul>
-                                    <li class="mb-2">
-                                        Development of alignment programs for various attachment and assembly processes.
+                                        Networking Application Technology
                                     </li>
                                     <li>
-                                        Gain unique technology to use Cognex's Align+ templates.
+                                        FA design and battlefield technology
                                     </li>
                                 </ul>
                             </div>
@@ -155,7 +179,7 @@
         </div>
 
         <div class="partners container" id="link-partners">
-            <h3 class="mt-5 text-center mb-2">Partners</h3>
+            <h3 class="text-center mb-2">Partners</h3>
 
             <div class="text-center">
                 <img src="/Image/partner.PNG" alt="">
@@ -190,6 +214,15 @@
                         <td>Experienced</td>
                         <td>Apply now</td>
                       </tr>
+
+                      <tr>
+                        <td>Developer C#</td>
+                        <td>30-10-2024</td>
+                        <td>Bac Ninh</td>
+                        <td>Experienced</td>
+                        <td>Apply now</td>
+                      </tr>
+                      
                       <tr>
                         <td>Developer C#</td>
                         <td>30-10-2024</td>
@@ -210,7 +243,7 @@
     </div>
     <div id="footer"></div>
 
-    <div class="position-fixed" style="right: 30px;bottom: 30px;">
+    <div class="position-fixed" style="right: 30px;bottom: 30px;z-index: 99999;">
         <button id="scrollToTopBtn" class="btn btn-danger" style="border-radius: 50%;height: 50px;width: 50px;">
             <i class="fa fa-arrow-up" aria-hidden="true" style="font-size: 25px;"></i>
         </button>
@@ -221,12 +254,14 @@
 <script src="/js/lib/popper.min.js"></script>
 <script src="/js/lib/bootstrap.min.js"></script>
 <script src="/js/lib/jquery-3.6.0.min.js"></script>
+<script src="/js/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 
 <script>
     $(document).ready(function(){
         $('#scrollToTopBtn').fadeOut();
         $("#header").load("share/header.html");
         $("#footer").load("share/footer.html");
+        $("#header-children").load("share/header-children.html");
 
         $('#scrollToTopBtn').click(function() {
             $(window).scrollTop(0);
@@ -238,6 +273,36 @@
                 $('#scrollToTopBtn').fadeIn();
             } else {
                 $('#scrollToTopBtn').fadeOut();
+            }
+        });
+
+        var owl = $('.owl-carousel');
+
+        owl.owlCarousel({
+            items:5,
+            loop:true,
+            //margin: 2,
+            rewind: true,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsiveClass:true,
+            responsive:{
+                0: {
+                    items: 1,  // Display 1 item on very small screens
+                    nav: false,
+                    loop: true
+                },
+                600: {
+                    items: 2,  // Display 2 items on screens 600px wide
+                    nav: false,
+                    loop: true
+                },
+                1000: {
+                    items: 5,  // Display 4 items on larger screens
+                    nav: false,
+                    loop: true
+                }
             }
         });
     });
