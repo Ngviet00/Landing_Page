@@ -31,6 +31,20 @@ header button {
     padding: 0 !important;
 }
 
+.active-menu-mobile {
+    width: 350px !important;
+}
+
+#menu-mobile {
+    background-color: gray;transition: 0.3s;
+    z-index: 9999;
+    right: 0px;
+    margin-top: 37px;
+    width: 0px;
+    height: 100%;
+    display: none;
+}
+
 @media only screen and (max-width: 992px) {
     header .container a.nav-link {
         display: none;
@@ -45,5 +59,13 @@ header button {
         display: block !important;
         padding-right: 6px;
         padding-top: 5px;
+    }
+
+    #menu-mobile {
+        display: block !important;
+    }
+
+    header .fa-bars:hover {
+        cursor: pointer;
     }
 }

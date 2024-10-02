@@ -31,3 +31,32 @@
         </div>
     </div>
 </header>
+
+<div id="menu-mobile" class="position-fixed">
+    <a href="">
+        Modern system
+    </a>
+    <ul>
+        <li>
+            <a href="">About us</a>
+        </li>
+        <li>
+            <a href="">Vietnv test</a>
+        </li>
+    </ul>
+</div>
+
+<script>
+    $(document).ready(function(){
+        let toggle = false;
+        $('.fa-bars').click(function() {
+            toggle = !toggle
+            
+            if (toggle) {
+                $('#menu-mobile').addClass('active-menu-mobile');
+            } else {
+                $('#menu-mobile').removeClass('active-menu-mobile');
+            }
+        })
+    });
+</script>
