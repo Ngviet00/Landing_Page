@@ -14,7 +14,6 @@
 
     <link rel="stylesheet" href="/js/lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="/js/lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-
 </head>
 <body class="position-relative">
     <div id="header" class="position-relative"></div>
@@ -68,6 +67,10 @@
                 <a href="javascript:void(0);" id="link-pc-vision">
                     PC Vision
                 </a>
+            </div>
+
+            <div class="img-text-core-business" style="display: none;">
+                <img src="/Image/core-business-mobile.png" alt="" width="386px">
             </div>
 
             <div class="img1-mobile position-relative" style="display: none;">
@@ -201,31 +204,23 @@
                     <tbody>
                       <tr>
                         <td>Developer C#</td>
-                        <td>30-10-2024</td>
+                        <td>31-12-2024</td>
                         <td>Bac Ninh</td>
                         <td>Experienced</td>
                         <td>Apply now</td>
                       </tr>
 
                       <tr>
-                        <td>Developer C#</td>
-                        <td>30-10-2024</td>
+                        <td>Vision Engineer</td>
+                        <td>31-12-2024</td>
                         <td>Bac Ninh</td>
                         <td>Experienced</td>
                         <td>Apply now</td>
                       </tr>
 
                       <tr>
-                        <td>Developer C#</td>
-                        <td>30-10-2024</td>
-                        <td>Bac Ninh</td>
-                        <td>Experienced</td>
-                        <td>Apply now</td>
-                      </tr>
-                      
-                      <tr>
-                        <td>Developer C#</td>
-                        <td>30-10-2024</td>
+                        <td>Electric Engineer</td>
+                        <td>31-12-2024</td>
                         <td>Bac Ninh</td>
                         <td>Experienced</td>
                         <td>Apply now</td>
@@ -279,9 +274,8 @@
         var owl = $('.owl-carousel');
 
         owl.owlCarousel({
-            items:5,
+            items:4,
             loop:true,
-            //margin: 2,
             rewind: true,
             autoplay:true,
             autoplayTimeout:3000,
@@ -299,16 +293,12 @@
                     loop: true
                 },
                 1000: {
-                    items: 5,  // Display 4 items on larger screens
+                    items: 4,  // Display 4 items on larger screens
                     nav: false,
                     loop: true
                 }
             }
         });
-
-        $('.fa-bars').click(function() {
-            alert(1);
-        })
     });
 </script>
 

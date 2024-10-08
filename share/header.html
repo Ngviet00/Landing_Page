@@ -15,7 +15,8 @@
         </div>
 
         <div>
-            <i class="fa fa-bars d-none" aria-hidden="true"></i>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
             <div class="dropdown">
                 <i class="fa fa-globe" aria-hidden="true" style="margin-top: 12px;"></i>
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -25,7 +26,7 @@
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">EN</a>
-                    <a class="dropdown-item" href="#">VN</a>
+                    <a class="dropdown-item" href="#">KR</a>
                 </div>
             </div>
         </div>
@@ -33,30 +34,51 @@
 </header>
 
 <div id="menu-mobile" class="position-fixed">
-    <a href="">
-        Modern system
-    </a>
-    <ul>
+    <ul class="text-center mt-3">
         <li>
-            <a href="">About us</a>
+            <a href="#">About us</a>
         </li>
         <li>
-            <a href="">Vietnv test</a>
+            <a href="#link-core-business">Core Business</a>
+        </li>
+        <li>
+            <a href="#link-our-offering">Our Offerings</a>
+        </li>
+        <li>
+            <a href="#link-partners">Partners</a>
+        </li>
+        <li>
+            <a href="#link-our-innovation">Our Innovations</a>
+        </li>
+        <li>
+            <a href="#link-career-oppotunities">Career Opportunities</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
         </li>
     </ul>
 </div>
 
 <script>
     $(document).ready(function(){
-        let toggle = false;
+        
         $('.fa-bars').click(function() {
-            toggle = !toggle
-            
-            if (toggle) {
-                $('#menu-mobile').addClass('active-menu-mobile');
-            } else {
-                $('#menu-mobile').removeClass('active-menu-mobile');
-            }
+            $('#menu-mobile').addClass('active-menu-mobile');
+            $('.fa-times').show();
+            $('.fa-bars').hide();
         })
+
+        $('.fa-times').click(function() {
+            $('#menu-mobile').removeClass('active-menu-mobile');
+            $('.fa-times').hide();
+            $('.fa-bars').show();
+        })
+
+        $('#menu-mobile ul li').click(function() {
+            $('#menu-mobile').removeClass('active-menu-mobile');
+            $('.fa-times').hide();
+            $('.fa-bars').show();
+        })
+
     });
 </script>

@@ -229,7 +229,7 @@ tbody tr td:first-child, tbody tr td:last-child {
         display: none !important;
     }
 
-    .img1-mobile, .img2-mobile, .img3-mobile {
+    .img1-mobile, .img2-mobile, .img3-mobile, .img-text-core-business {
         display: block !important;
         margin: 0px auto;
     }
