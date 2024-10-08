@@ -286,3 +286,15 @@ tbody tr td:first-child, tbody tr td:last-child {
         font-size: 11px;
     }
 }
+
+@media only screen and (max-width: 413px) {
+    tbody td {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 386px) {
+    tbody td {
+        font-size: 9px;
+    }
+}
