@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Modern System VN</title>
+	<script type=application/ld+json>
+        {
+        "@context" : "https://schema.org",
+        "@type" : "WebSite",
+        "name" : "MSVN",
+        "alternateName": ["MSVN1", "msvn.com"],
+        "url" : "https://msvn.vn/"
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="og:site_name" content="MSVN 2021">
+	<meta property="og:type" content="website">
 	<meta name="description" content="Modern System VN - Khám phá giải pháp và thông tin doanh nghiệp hàng đầu.">
-    <title>Modern System VN</title>
+    
     <link rel="stylesheet" href="styles/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="styles/header.css" asp-append-version="true" />
     <link rel="stylesheet" href="styles/header-children.css" asp-append-version="true" />
     <link rel="stylesheet" href="styles/footer.css" asp-append-version="true" />
     <link rel="stylesheet" href="styles/lib/bootstrap.min.css">
     <link rel="stylesheet" href="Font-Awesome-4.7.0/css/font-awesome.min.css" asp-append-version="true" />
-    <link rel="icon" href="Image/icon.PNG" type="image/x-icon" />
+    <link rel="shortcut icon" href="Image/icon.PNG" type="image/x-icon"/>
 
     <link rel="stylesheet" href="js/lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="js/lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-	<!-- Google Tag Manager -->
+	<!-- Google Tag Manager 
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-W39PXDPR');</script>
-	<!-- End Google Tag Manager -->
-</head>
-<body class="position-relative">
+	 End Google Tag Manager -->
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W39PXDPR"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
+	<meta name="google-site-verification" content="CNkooTeJ0RWjsTGIjXrX6WqbO4HWhZP1pK6tBxXGz5o" />
+</head>
+<body class="position-relative">
+	
     <div id="header" class="position-relative">
         <header >
             <div class="container d-flex justify-content-between align-items-center">
@@ -94,29 +108,28 @@
         <div class="container class-header-children">
             <ul class="d-flex m-0">
                 <li>
-                    <a href="" class="active-header-children">About us</a>
+                    <a href="#" class="active-header-children">About us</a>
                 </li>
                 <li>
-                    <a href="">Core Business</a>
+                    <a href="#link-core-business">Core Business</a>
                 </li>
                 <li>
-                    <a href="">Our Offerings</a>
+                    <a href="#link-our-offering">Our Offerings</a>
                 </li>
                 <li>
-                    <a href="">Partners</a>
+                    <a href="#link-partners">Partners</a>
                 </li>
                 <li>
-                    <a href="">Our Innovations</a>
+                    <a href="#link-our-innovation">Our Innovations</a>
                 </li>
                 <li>
-                    <a href="">Career Opportunities</a>
+                    <a href="#link-career-oppotunities">Career Opportunities</a>
                 </li>
                 <li>
-                    <a href="">Contact Us</a>
+                    <a href="#">Contact Us</a>
                 </li>
             </ul>
         </div>
-        
     </div>
 
     <div id="content">
@@ -342,7 +355,53 @@
         
                 <div class="d-flex align-item-center mb-4 header-contact" style="padding-top: 10px;">
                     <h2 class="text-modern-system">Modern System</h2>
-                    <button class="btn btn-primary btn-contact">Contact Us</button>
+                    <button type="button" class="btn btn-primary btn-contact" data-toggle="modal" data-target="#id-modal-contact-us">Contact Us</button>
+
+                    <div class="modal fade modal-contact-us" id="id-modal-contact-us" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content p-3">
+                                <h3 class="text-dark">Contact us</h3>
+
+                                <form id="form-contact">
+                                    <div class="form-row">
+
+                                        <div class="form-group col-md-8 mb-2">
+                                            <label for="form-contact-fullname">Fullname</label>
+                                            <input type="text" class="form-control" id="form-contact-fullname" placeholder="Fullname">
+                                        </div>
+
+                                        <div class="form-group col-md-8 mb-2">
+                                            <label for="form-contact-email">Email</label>
+                                            <input type="email" class="form-control" id="form-contact-email" placeholder="Email">
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="form-group col-md-8 mb-2">
+                                        <label for="inputAddress">Address</label>
+                                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-8 mb-2">
+                                            <label for="form-contact-phone">Phone</label>
+                                            <input type="text" class="form-control" id="form-contact-phone">
+                                        </div>
+
+                                        <div class="form-group mb-2">
+                                            <label for="form-contact-message">Message</label>
+                                            <textarea class="form-control" id="form-contact-message" rows="3"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary btn-send-contact text-center">Send</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
         
                 <div class="row">
@@ -456,6 +515,7 @@
 <script src="js/lib/bootstrap.min.js"></script>
 <script src="js/lib/jquery-3.6.0.min.js"></script>
 <script src="js/lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="js/lib/sweetalert2@11.js"></script>
 
 <script>
     $(document).ready(function(){
@@ -521,7 +581,17 @@
             }
         });
 
-        $('#currrent-year').html(new Date().getFullYear())
+        $('#currrent-year').html(new Date().getFullYear());
+
+        $('.btn-send-contact').click(function() {
+            Swal.fire({
+                title: "Success",
+                text: "Contact form has been sent",
+                icon: "success"
+            });
+
+            $("#id-modal-contact-us").modal('hide');
+        });
     });
 </script>
 
