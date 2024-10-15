@@ -1,5 +1,10 @@
 #header-children {
     border-bottom: 1px solid #d7d7d7;
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100%;
+    z-index: 9;
 }
 .class-header-children {
     margin-top: 6em;
