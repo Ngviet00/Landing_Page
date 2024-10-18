@@ -105,22 +105,22 @@
         <div class="container class-header-children">
             <ul class="d-flex m-0">
                 <li>
-                    <a href="#" class="active-header-children">About us</a>
+                    <a href="#" id="active-header-about-us" class="item-header-children">About us</a>
                 </li>
                 <li>
-                    <a href="#link-core-business">Core Business</a>
+                    <a href="#link-core-business" id="active-header-link-core-business" class="item-header-children">Core Business</a>
                 </li>
                 <li>
-                    <a href="#link-our-offering">Our Offerings</a>
+                    <a href="#link-our-offering" id="active-header-link-our-offering" class="item-header-children">Our Offerings</a>
                 </li>
                 <li>
-                    <a href="#link-partners">Partners</a>
+                    <a href="#link-partners" id="active-header-link-partners" class="item-header-children">Partners</a>
                 </li>
                 <li>
-                    <a href="#link-career-oppotunities">Career Opportunities</a>
+                    <a href="#link-career-oppotunities" id="active-header-link-career-oppotunities" class="item-header-children">Career Opportunities</a>
                 </li>
                 <li>
-                    <a href="#btn-link-contact">Contact Us</a>
+                    <a href="#btn-link-contact" id="active-header-btn-link-contact" class="item-header-children">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -159,7 +159,7 @@
             </span>
         </div>
 
-        <div class="core-business mt-5 text-center" id="link-core-business" style="scroll-margin-top: 9em;">
+        <div class="core-business mt-5 text-center elm-scroll-active-header" id="link-core-business" style="scroll-margin-top: 9em;">
             <div class="position-relative d-inline-block main-core-business">
                 <img src="Image/1920x640_Core-Business_Banner.jpg" alt="" style="width: 100%;height: auto;">
                 <span class="text-core-business">
@@ -202,8 +202,8 @@
             </div>
         </div>
 
-        <div class="our-offerings mt-5" id="link-our-offering" style="scroll-margin-top: 9em;">
-            <h2 class="text-center mb-4">Our Offerings</h2>
+        <div class="our-offerings mt-5 elm-scroll-active-header" id="link-our-offering" style="scroll-margin-top: 9em;">
+            <h2 class="text-center" style="margin-top: 70px;margin-bottom: 30px;">Our Offerings</h2>
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="text-container">
@@ -286,16 +286,16 @@
             </div>
         </div>
 
-        <div class="partners container" id="link-partners" style="scroll-margin-top: 8em;">
-            <h3 class="text-center mb-2 mt-5">Partners</h3>
+        <div class="partners container elm-scroll-active-header" id="link-partners" style="scroll-margin-top: 8em;">
+            <h3 class="text-center mb-4 mt-5">Partners</h3>
 
             <div class="text-center">
                 <img src="Image/partner.PNG" alt="">
             </div>
         </div>
 
-        <div class="career-opportunities container mt-5" id="link-career-oppotunities" style="padding: 0px;scroll-margin-top: 8em;">
-            <h3 class="text-center">Career Opportunities</h3>
+        <div class="career-opportunities container elm-scroll-active-header" id="link-career-oppotunities" style="padding: 0px;scroll-margin-top: 8em;margin-top: 70px;margin-bottom: 40px;">
+            <h3 class="text-center" style="margin-bottom: 30px;">Career Opportunities</h3>
 
             <div class="list-job mt-4">
                 <table class="table">
@@ -334,7 +334,7 @@
             </div>
         </div>
     </div>
-    <div id="footer">
+    <div id="footer" class="elm-scroll-active-header">
         <footer>
             <div class="container">
         
@@ -589,6 +589,38 @@
                 }
             });
         }
+
+        $('#active-header-about-us').addClass('active-header-children')
+
+        $(window).on('scroll', function() {
+            $('.elm-scroll-active-header').each(function() {
+                var elm = $(this).attr('id');
+
+                if ($(this).offset().top <= $(window).scrollTop() + $(window).height() / 3 && $(this).offset().top + $(this).outerHeight() > $(window).scrollTop())
+                {
+                    $('.item-header-children').removeClass('active-header-children');
+                    $('#active-header-' + elm).addClass('active-header-children')
+                }
+                else
+                {
+                    $('#active-header-' + elm).removeClass('active-header-children')
+                }
+            });
+
+            var scrollTop = $(window).scrollTop(); 
+
+            if (scrollTop <= 493) {
+                $('#active-header-about-us').addClass('active-header-children')
+            }
+
+            if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
+                $('#active-header-btn-link-contact').addClass('active-header-children')
+            }
+
+            if ($(window).scrollTop() === 0) {
+                $('#active-header-about-us').addClass('active-header-children')
+            }
+        });
     });
 </script>
 
