@@ -229,10 +229,6 @@ tbody tr td:first-child, tbody tr td:last-child {
 }
 
 @media only screen and (max-width: 992px) {
-    #map-company-pc {
-        display: none !important;
-    }
-
     #content {
         margin-top: 1em;
         padding-top: 4em;

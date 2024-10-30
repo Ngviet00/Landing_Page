@@ -34,44 +34,6 @@ footer .btn-contact {
     border:none;
 }
 
-footer .about-us ul {
-    padding-left: 0px;
-}
-footer .about-us ul li {
-    list-style: none;
-    color: #FFFFFFB2;
-}
-
-footer .about-us h4 {
-    font-size: 16px;
-    line-height: 18px;
-}
-
-footer .about-us ul li a {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 36px;
-    color: #FFFFFFB2;
-    text-decoration: none;
-}
-
-footer .core-business ul {
-    padding-left: 0px;
-}
-
-footer .core-business ul li {
-    list-style: none;
-    color: #FFFFFFB2;
-}
-
-footer .core-business ul li a {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 36px;
-    color: #FFFFFFB2;
-    text-decoration: none;
-}
-
 footer .office-address .first-line a:hover span {
     text-decoration: underline;
 }
@@ -79,7 +41,7 @@ footer .office-address .first-line a:hover span {
 footer .office-address .first-line .fa-map-marker{
     position: absolute;
     top: 14px;
-    left: -25px;
+    left: 0px;
     font-size: 30px;
     color: #E4491D;
 }
@@ -96,7 +58,7 @@ footer .office-address .first-line span {
 footer .office-address .second-line .fa-phone{
     position: absolute;
     top: 5px;
-    left: -30px;
+    left: 0px;
     font-size: 30px;
     color: #E4491D;
 }
@@ -113,7 +75,7 @@ footer .office-address .second-line span {
 footer .office-address .third-line .fa-users{
     position: absolute;
     top: 14px;
-    left: -30px;
+    left: 0px;
     font-size: 23px;
     color: #E4491D;
 }
@@ -139,7 +101,7 @@ footer .factory-address .first-line a:hover span {
 footer .factory-address .first-line .fa-map-marker {
     position: absolute;
     top: 14px;
-    left: -25px;
+    left: 0px;
     font-size: 30px;
     color: #E4491D;
 }
@@ -150,13 +112,13 @@ footer .factory-address .first-line h4 {
 
 footer .factory-address .first-line span {
     font-size: 14px;
-    height: 67px;
+    height: 30px;
     display: inline-block;
 }
 
 footer .factory-address .second-line .fa-phone {
     position: absolute;
-    left: -28px;
+    left: 0px;
     font-size: 30px;
     color: #E4491D;
     top: 5px;
@@ -174,7 +136,7 @@ footer .factory-address .second-line span {
 footer .factory-address .third-line .fa-envelope {
     position: absolute;
     top: 8px;
-    left: -31px;
+    left: 0px;
     font-size: 26px;
     color: #E4491D;
 }
@@ -198,6 +160,62 @@ footer .copy-right ul li a {
     text-decoration: none;
 }
 
+.footer-about-us ul {
+    display: flex;
+}
+
+.footer-about-us ul li {
+    list-style: none;
+}
+
+.footer-about-us ul li a {
+    text-decoration: none;
+    color: #FFFFFFB2;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.footer-core-business ul {
+    display: flex;
+}
+
+.footer-core-business ul li {
+    list-style: none;
+}
+
+.footer-core-business ul li a {
+    text-decoration: none;
+    color: #FFFFFFB2;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    #map-company-pc {
+        flex-direction: column;
+    }
+
+    footer .factory-address {
+        margin-top: 30px;
+        border-top: 1px solid #7f7a7a;
+        padding-left: 0;
+    }
+
+    .footer-core-business ul, .footer-about-us ul {
+        flex-direction: column;
+    }
+
+    .footer-core-business ul a, .footer-about-us ul a {
+        margin-left: 0px !important;
+        padding: 3px 0px;
+    }
+
+    footer .wrap-about-core-business {
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     footer {
         padding-left: 30px;
@@ -207,16 +225,12 @@ footer .copy-right ul li a {
         justify-content: center;
     }
 
-    footer .container .item-info {
-        flex-basis: 49%;
-    }
-
-    footer .about-us, footer .core-business {
-        margin-bottom: 1em;
-    }
-
     footer .fa-map-marker, footer .fa-phone, footer .fa-users, footer .fa-envelope {
         font-size: 25px !important;
+    }
+
+    #map-company-pc iframe{
+        display: none !important;
     }
 }
 
@@ -236,18 +250,9 @@ footer .copy-right ul li a {
 }
 
 @media only screen and (max-width: 500px) {
-    footer .office-address, footer .factory-address {
-        flex-basis: 98% !important;
-    }
 
     footer .factory-address .first-line span {
         height: 0px;
-    }
-
-    footer .factory-address.item-info {
-        margin-top: 30px;
-        border-top: 1px solid #7f7a7a;
-        padding-top: 10px;
     }
 
     footer .btn-contact {
@@ -257,10 +262,6 @@ footer .copy-right ul li a {
 }
 
 @media only screen and (max-width: 475px) {
-    footer .container .item-info {
-        font-size: 13px;
-    }
-
     footer .copy-right span {
         font-size: 12px;
     }
